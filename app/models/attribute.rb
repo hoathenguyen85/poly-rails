@@ -4,17 +4,17 @@ class Attribute < ActiveRecord::Base
 	# on the other end using has_many.  Use the same name
 	# :attribute for the other table to know how to connect
 	# the columns to this table
-  belongs_to :attribute, polymorphic: true
+  belongs_to :attributable, polymorphic: true
   # makes a column in this table as the following
-  # |--------------------------------------------|
-  # | id  | attribute_id | attribute_type        |........OTHER COLUMN FOR THIS
-  # |--------------------------------------------|
-  # | 1   | 1            |  ClassName1           |
-  # |--------------------------------------------|
-  # | 2   | 2            |  ClassName1           |
-  # |--------------------------------------------|
-  # | 3   | 1            |  ClassName2           |
-  # |--------------------------------------------|
-  # | 4   | 2            |  ClassName2           |
-  # |--------------------------------------------|
+  # |------------------------------------------------|
+  # | id  | attributable_id | attributable_type      |........OTHER COLUMN FOR THIS
+  # |------------------------------------------------|
+  # | 1   | 1               |  ClassName1            |
+  # |------------------------------------------------|
+  # | 2   | 2               |  ClassName1            |
+  # |------------------------------------------------|
+  # | 3   | 1               |  ClassName2            |
+  # |------------------------------------------------|
+  # | 4   | 2               |  ClassName2            |
+  # |------------------------------------------------|
 end
