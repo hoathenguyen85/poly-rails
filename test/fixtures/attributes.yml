@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  attribute_id: 
+  attribute_type: Attribute
+  name: MyString
+  sex: MyString
+  is_neuter: false
+
+two:
+  attribute_id: 
+  attribute_type: Attribute
+  name: MyString
+  sex: MyString
+  is_neuter: false

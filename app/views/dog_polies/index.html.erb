@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Dog Polies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dog_polies.each do |dog_poly| %>
+      <tr>
+        <td><%= link_to 'Show', dog_poly %></td>
+        <td><%= link_to 'Edit', edit_dog_poly_path(dog_poly) %></td>
+        <td><%= link_to 'Destroy', dog_poly, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dog poly', new_dog_poly_path %>

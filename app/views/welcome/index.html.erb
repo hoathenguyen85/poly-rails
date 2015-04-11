@@ -1,0 +1,23 @@
+<h1>Regular tables</h1>
+<div>
+	<%= link_to "Click me to see all cats",   cats_path %>
+</div>
+<div>
+	<%= link_to "Click me to see all dogs",   dogs_path %>
+</div>
+<!-- This is weird right? why not fishes_path like the others?
+     ALWAYS checkout be rake routes to see the prefixes -->
+<div>
+	<%= link_to "Click me to see all fishes", fish_index_path %>
+</div>
+
+<h1>Polymorphic tables</h1>
+<div>
+	<%= link_to "Click me to see all polymorphic dogs",   dog_polies_path %>
+</div>
+<div>
+	<%= link_to "Click me to see all polymorphic cats",   cat_polies_path %>
+</div>
+<div>
+	<%= link_to "Click me to see all polymorphic fishes", fish_polies_path %>
+</div>

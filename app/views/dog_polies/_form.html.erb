@@ -1,0 +1,17 @@
+<%= form_for(@dog_poly) do |f| %>
+  <% if @dog_poly.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dog_poly.errors.count, "error") %> prohibited this dog_poly from being saved:</h2>
+
+      <ul>
+      <% @dog_poly.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

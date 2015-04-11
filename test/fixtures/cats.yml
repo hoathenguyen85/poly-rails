@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dog: MyString
+  fish: MyString
+  name: MyString
+  description: MyText
+  sex: MyString
+  is_neuter: false
+
+two:
+  dog: MyString
+  fish: MyString
+  name: MyString
+  description: MyText
+  sex: MyString
+  is_neuter: false

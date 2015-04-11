@@ -1,0 +1,17 @@
+<%= form_for(@fish_poly) do |f| %>
+  <% if @fish_poly.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fish_poly.errors.count, "error") %> prohibited this fish_poly from being saved:</h2>
+
+      <ul>
+      <% @fish_poly.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

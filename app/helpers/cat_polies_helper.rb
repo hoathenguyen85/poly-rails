@@ -1,0 +1,2 @@
+module CatPoliesHelper
+end

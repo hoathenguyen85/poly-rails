@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dog poly:</strong>
+  <%= @cat_poly.dog_poly %>
+</p>
+
+<p>
+  <strong>Fish poly:</strong>
+  <%= @cat_poly.fish_poly %>
+</p>
+
+<%= link_to 'Edit', edit_cat_poly_path(@cat_poly) %> |
+<%= link_to 'Back', cat_polies_path %>
