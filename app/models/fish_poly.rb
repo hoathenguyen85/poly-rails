@@ -1,4 +1,4 @@
 class FishPoly < ActiveRecord::Base
-	has_many :notes, as: :describe
-	has_many :attributes, as: :attribute
+	has_many :notes, as: :describable
+	has_many :attrs, as: :attributable
 end
