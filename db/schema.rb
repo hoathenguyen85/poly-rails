@@ -14,16 +14,16 @@
 ActiveRecord::Schema.define(version: 20150411133714) do
 
   create_table "attributes", force: :cascade do |t|
-    t.integer  "attribute_id"
-    t.string   "attribute_type"
+    t.integer  "attributable_id"
+    t.string   "attributable_type"
     t.string   "name"
     t.string   "sex"
     t.boolean  "is_neuter"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
-  add_index "attributes", ["attribute_type", "attribute_id"], name: "index_attributes_on_attribute_type_and_attribute_id", using: :btree
+  add_index "attributes", ["attributable_type", "attributable_id"], name: "index_attributes_on_attributable_type_and_attributable_id", using: :btree
 
   create_table "cat_polies", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -68,13 +68,13 @@ ActiveRecord::Schema.define(version: 20150411133714) do
   end
 
   create_table "notes", force: :cascade do |t|
-    t.integer  "describe_id"
-    t.string   "describe_type"
+    t.integer  "describable_id"
+    t.string   "describable_type"
     t.text     "description"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
-  add_index "notes", ["describe_type", "describe_id"], name: "index_notes_on_describe_type_and_describe_id", using: :btree
+  add_index "notes", ["describable_type", "describable_id"], name: "index_notes_on_describable_type_and_describable_id", using: :btree
 
 end

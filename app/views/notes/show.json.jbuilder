@@ -1,1 +1,1 @@
-json.extract! @note, :id, :describe_id, :describe_type, :description, :created_at, :updated_at
+json.extract! @note, :id, :describable_id, :describable_type, :description, :created_at, :updated_at
